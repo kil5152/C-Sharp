@@ -62,4 +62,26 @@ namespace WorkerClasses
             this.log4NetAdapter.Warn(message, exception);
         }
     }
+    
+    public class ExampleClass
+    {
+        private readonly Logger logger = new Logger(typeof(ExampleClass));
+    
+        public ExampleClass()
+        {
+             
+        }
+        
+    }
+    
+    class Program
+    {
+        private static readonly LoggerWrapper logger = new LoggerWrapper(typeof(Program));
+
+        static void Main(string[] args)
+        {
+            
+            
+        }   
+    }   
 }
